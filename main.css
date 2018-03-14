@@ -80,7 +80,7 @@ body {
         overflow-x: hidden;
         overflow-y: auto;
 
-        width: 16.67%;
+        width: 20%;
     }
 
     #page-nav > a, #page-nav > span {
@@ -115,6 +115,12 @@ body {
     }
 }
 
+@media screen and (min-width: 1000px) {
+    #page-nav {
+        width: 16.67%;
+    }
+}
+
 @media screen and (min-width: 1500px) {
     #page-nav {
         width: 11.11%;
@@ -125,11 +131,12 @@ body {
 
 @media screen and (min-width: 900px) {
     #content {
-        margin-left: 16.67%;
+        margin-left: 20%;
 
         padding: 1.3em 2em;
 
-        background: linear-gradient(#0000 calc(100% - 5rem), #ffff) no-repeat border-box, linear-gradient(to right, #ddd, #fff 0.4%) no-repeat border-box;
+        background: linear-gradient(#0000 calc(100% - 5rem), #ffff) no-repeat border-box,
+                    linear-gradient(to right, #ddd, #fff 0.4%) no-repeat border-box;
 
         text-align: justify;
     }
@@ -140,6 +147,22 @@ body {
 
     .extra-margin {
         margin-top: 1.85rem;
+    }
+
+    #content a {
+        text-decoration: none;
+        color: #008000;
+    }
+
+    #content a:hover {
+        text-decoration: underline;
+        color: #00b000;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #content {
+        margin-left: 16.67%;
     }
 }
 
