@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+
+    font-family: Arial;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* -------------------------------- Header -------------------------------- */
+
+@media screen and (min-width: 900px) {
+    header {
+        display: block;
+
+        margin: 0;
+        padding: 1.5em;
+        line-height: 2rem;
+        height: 5.5rem;
+
+        background: linear-gradient(#008000, #61b061);
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    header > h1 {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* ---------------------------- Main navigation --------------------------- */
+
+@media screen and (min-width: 900px) {
+    #main-nav {
+        overflow: hidden;
+
+        background: linear-gradient(#4a4a4a, #383838);
+        color: white;
+        text-align: center;
+
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 0.95rem;
+
+        height: 1.85rem;
+    }
+
+    #main-nav > a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #main-nav > a, #main-nav > span {
+        display: inline-block;
+        padding: 0.4rem;
+        cursor: pointer;
+    }
+
+    #main-nav > a:hover, #main-nav > span:hover {
+        background: #555;
+    }
+
+    div.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+
+/* ---------------------------- Side navigation --------------------------- */
+
+@media screen and (min-width: 900px) {
+    #page-nav {
+        position: absolute;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        width: 16.67%;
+    }
+
+    #page-nav > a, #page-nav > span {
+        display: block;
+        padding: 1em;
+        cursor: pointer;
+    }
+
+    #page-nav > a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #page-nav > span:after {
+        content: "\002B";
+
+        position: relative;
+        float: right;
+
+        margin-left: 0.5em;
+
+        color: #777;
+        font-weight: bold;
+    }
+
+    #page-nav > a:hover, #page-nav > span:hover {
+        background: #D2F4D2;
+    }
+
+    #page-nav.sticky {
+        position: fixed;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #page-nav {
+        width: 11.11%;
+    }
+}
+
+/* -------------------------------- Content ------------------------------- */
+
+@media screen and (min-width: 900px) {
+    #content {
+        margin-left: 16.67%;
+
+        padding: 1.3em 2em;
+
+        background: linear-gradient(#0000 calc(100% - 5rem), #ffff) no-repeat border-box, linear-gradient(to right, #ddd, #fff 0.4%) no-repeat border-box;
+
+        text-align: justify;
+    }
+
+    #content > h2:first-of-type {
+        margin-top: 0;
+    }
+
+    .extra-margin {
+        margin-top: 1.85rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #content {
+        margin-left: 11.11%;
+    }
+}
