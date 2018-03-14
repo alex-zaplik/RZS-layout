@@ -4,31 +4,55 @@
     <head>
         <title>Razem Zdajmy Studia</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="desktop.css">
     <body>
         <header>
             <h1>Razem Zdajmy Studia</h1>
         </header>
         <div>
-        <nav id="main-nav">
-                <a href="#">Główna</a>
-                <span>Semestr 1</span>
-                <span>Semestr 2</span>
-                <span>Semestr 3</span>
-                <span>Semestr 4</span>
-                <span>Semestr 5</span>
-                <span>Semestr 6</span>
-                <span>Wybieralne</span>
-                <span>Inne</span>
-            </ul>
-        </nav>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#">Główna</a></li>
+                    <li><span>Semestr 1</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Test 1</a></li>
+                            <li><a href="#">Test 2</a></li>
+                        </ul>
+                    </li>
+                    <li><span>Semestr 2</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Test Test Test Test</a></li>
+                            <li><a href="#">Test 22 VLALALA</a></li>
+                            <li><a href="#">Test 33</a></li>
+                            <li><a href="#">Test 44</a></li>
+                        </ul>
+                    </li>
+                    <li>Semestr 3</li>
+                    <li>Semestr 4</li>
+                    <li>Semestr 5</li>
+                    <li>Semestr 6</li>
+                    <li>Wybieralne</li>
+                    <li>Inne</li>
+                </ul>
+            </nav>
 
-        <nav id="page-nav">
-            <a href="index.html">Wstęp</a>
-            <span>Przydatne linki</span>
-            <span>Ogłoszenia</span>
-            <a href="onas.html">O nas</a>
-        </nav>
+            <nav id="page-nav">
+                <ul>
+                    <li><a href="index.html">Wstęp</a></li>
+                    <li class="acc-button"><span>Przydatne linki</span></li>
+                    <ul class="acc">
+                        <li><a href="#">2k15</a></li>
+                        <li><a href="#">2k16</a></li>
+                        <li><a href="#">2k17</a></li>
+                    </ul>
+                    <li class="acc-button"><span>Ogłoszenia</span></li>
+                    <ul class="acc">
+                        <li><a href="#">2k15</a></li>
+                        <li><a href="#">2k16</a></li>
+                        <li><a href="#">2k17</a></li>
+                    </ul>
+                    <li><a href="onas.html">O nas</a></li>
+            </nav>
         </div>
 
         <div id="content">
@@ -58,6 +82,6 @@
             </p>
         </div>
 
-        <script src="sticky-nav.js"></script>
+        <script src="desktop.js"></script>
     </body>
 </html>
