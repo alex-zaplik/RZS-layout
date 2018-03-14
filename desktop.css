@@ -86,6 +86,10 @@ body {
         font-weight: bold;
     }
 
+    #main-nav > ul > li:hover > span::after {
+        content: "\2212";
+    }
+
     ul.dropdown {
         position: absolute;
         top: 100%;
