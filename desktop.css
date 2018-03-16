@@ -79,7 +79,7 @@ body {
     }
 
     #main-nav > ul > li:hover {
-        background: #555;
+        background: linear-gradient(#5a5a5a, #3a3a3a);
     }
 
     #main-nav > ul > li > span:after {
